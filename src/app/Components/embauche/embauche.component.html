@@ -1,0 +1,32 @@
+<!-- 
+<button  type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    Personnes Embauchées
+</button>
+ 
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">-->
+      <div *ngIf="personnesEmbauchees.length" class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Personnes Embauchées</h5>
+        </div>
+        <div class="modal-body"> 
+            <ol class="list-group">
+                <li
+                  *ngFor= "let itemPersonne of personnesEmbauchees; let color = odd"
+                  class="list-group-item"
+                  [ngClass]= "{
+                    'list-group-item-light': color,
+                    'list-group-item-dark': !color
+                  }"
+                  >
+                  <app-item
+                    [personne]="itemPersonne"
+                  ></app-item>
+                </li>
+              </ol>
+        </div>
+      </div>
+     <!--  
+      </div>
+    </div>
+  </div>--> 

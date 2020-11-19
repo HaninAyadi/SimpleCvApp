@@ -28,9 +28,13 @@
               "src/assets"
             ],
             "styles": [
+              "../CvApp/node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "../CvApp/node_modules/jquery/dist/jquery.min.js",
+              "../CvApp/node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
